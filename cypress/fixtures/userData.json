@@ -1,0 +1,14 @@
+{
+    "loginSucces": {
+        "username": "Heath93",
+        "password": "s3cret"
+    },
+    "loginUsernameFail": {
+        "username": "Heath933",
+        "password": "s3cret"
+    },
+    "loginPasswordFail": {
+        "username": "Heath93",
+        "password": "s3crett"
+    }
+}
