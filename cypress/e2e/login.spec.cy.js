@@ -11,12 +11,20 @@ describe("Login Test - RWA", () => {
             userData.loginSucces.password);
     });
 
-   /* it("Login Failed - Invalid Username", () => {
-
+    it("Login Failed - Invalid Username", () => {
+        LoginPage.accessPage();
+        LoginPage.logIn(
+            userData.loginUsernameFail.username,
+            userData.loginUsernameFail.password);
+        LoginPage.checkLoginInvalid();
     });
 
     it("Login Failed - Invalid Password", () => {
-
+        LoginPage.accessPage();
+        LoginPage.logIn(
+            userData.loginPasswordFail.username,
+            userData.loginPasswordFail.password);
+        LoginPage.checkLoginInvalid();
     });
-    */
+    
 });
