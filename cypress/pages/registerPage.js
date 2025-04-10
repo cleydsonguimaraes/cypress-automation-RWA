@@ -18,11 +18,30 @@ class registerPage {
     //cy.url().should("include", "/signup");
   }
   register(firstName, lastName, userName, password,confirmPassword) {
-    cy.get(this.selectorsList().firstNameField).type(firstName);
-    cy.get(this.selectorsList().lastNameField).type(lastName);
-    cy.get(this.selectorsList().userNameField).type(userName);
-    cy.get(this.selectorsList().passwordField).type(password);
-    cy.get(this.selectorsList().confirmPasswordField).type(confirmPassword);
+    cy.get(this.selectorsList().firstNameField).click();
+    if (firstName) {
+      cy.get(this.selectorsList().firstNameField).type(firstName);
+  }
+
+    cy.get(this.selectorsList().lastNameField).click();
+    if (lastName) {
+      cy.get(this.selectorsList().lastNameField).type(lastName);
+  }
+
+    cy.get(this.selectorsList().userNameField).click();
+    if (userName) {
+      cy.get(this.selectorsList().userNameField).type(userName);
+  }
+
+    cy.get(this.selectorsList().passwordField).click();
+    if (password) {
+      cy.get(this.selectorsList().passwordField).type(password);
+  }
+
+    cy.get(this.selectorsList().confirmPasswordField).click();
+    if (confirmPassword) {
+      cy.get(this.selectorsList().confirmPasswordField).type(confirmPassword);
+  }
   }
   clickRegister() {
     cy.get(this.selectorsList().signUpButton).click();

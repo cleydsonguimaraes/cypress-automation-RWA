@@ -83,7 +83,7 @@ describe("Register Test - RWA", () => {
     RegisterPage.register(
         "Cleydson", 
         "Guimarares", 
-        "", 
+        "Cleyds$0n", 
         "test123",
         "testt123");
     RegisterPage.errorMessage(4, "Password does not match");
